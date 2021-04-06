@@ -1,0 +1,12 @@
+{
+  "zcbfzt": [
+    { "value": "", "label": "全部"
+    },
+    { "value": 190, "label": "未归档"
+    },
+    { "value": 192, "label": "已提交归档"
+    },
+    { "value": 200, "label": "已归档"
+    }
+  ]
+}

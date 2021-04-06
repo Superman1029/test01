@@ -1,0 +1,219 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+// 表格样式修改
+.el-table {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+.el-table td, .el-table th {
+  padding: 5px 0 !important;
+}
+/* 用来设置当前页面element全局table 选中某行时的背景色*/
+// .el-table__body tr.current-row>td{
+//   background-color: #409EFF !important;
+//   /* color: #f19944; */  /* 设置文字颜色，可以选择不设置 */
+// }
+// /* 用来设置当前页面element全局table 鼠标移入某行时的背景色*/
+// .el-table--enable-row-hover .el-table__body tr:hover>td {
+//   background-color: #55aaff !important;
+//   /* color: #f19944; */ /* 设置文字颜色，可以选择不设置 */
+// }
+// 表格边框样式修改
+ .el-table td, .el-table th.is-leaf,.el-table--border, .el-table--group, .el-table--border th, .el-table--border th.gutter:last-of-type, .el-table--border td, .el-table--border th{
+   border-color: #E8E8E8 !important;
+ }
+ .el-table--border::after, .el-table--group::after, .el-table::before{
+   background-color: #E8E8E8 !important;
+ }
+.el-table-column--selection .cell{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+// 表头样式修改
+.el-table th{
+  background: #FAFAFA !important;
+  text-align: center !important;
+}
+.el-table thead.is-group th {
+  background: #FAFAFA !important;
+  text-align: center !important;
+}
+// 先取掉 不知道是干啥的
+// .el-table .el-table__row td{
+//   padding-right: 10px !important;
+// }
+.el-table .cell.el-tooltip {
+  width: 100% !important;
+  padding-right: 0 !important;
+
+}
+.el-table-filter .el-scrollbar__wrap {
+  overflow: scroll !important;
+}
+// .el-table thead {
+//   color: black;
+// }
+// .el-table th.gutter{
+//   display: table-cell!important;
+// }
+
+// 标签页样式修改
+//.el-tabs__header {
+//  margin: 0 !important;
+//}
+
+// 按钮的样式修改
+.el-button {
+  padding: 5px 20px !important;
+}
+
+// 单选框
+.el-radio__inner {
+  width: 12px !important;
+  height: 12px !important;
+}
+.el-radio__label {
+  padding-left: 12px !important;
+}
+
+// 多选框
+.el-checkbox__inner {
+  width: 12px !important;
+  height: 12px !important;
+}
+.el-checkbox__inner::after {
+  height: 5px !important;
+  left: 3px !important;
+}
+.el-checkbox__label {
+  padding-left: 12px !important;
+}
+
+// 标签页
+.el-tabs__item {
+  padding: 7px 12px !important;
+  height: 35px !important;
+  line-height: normal !important;
+  border-radius: 2px 2px 0 0 !important;
+}
+.el-tabs__item:hover {
+  color: initial !important;
+}
+.el-tabs__item.is-active {
+  background: rgba(var(--defaultColorRGB),0.1);
+  color: var(--defaultColor) !important;
+}
+.el-tabs__header {
+  margin: 0 !important;
+}
+
+// 下拉选择框样式修改
+.el-input__inner {
+  height: 28px;
+  line-height: 28px;
+}
+.el-input__icon {
+  line-height: 1 !important;
+}
+
+.el-select-dropdown .el-scrollbar .el-scrollbar__wrap
+{
+  overflow: scroll!important;
+}
+
+// 对话框样式修改
+.el-dialog{
+  border: 1px solid #f2f4f8 !important;
+  border-radius: 4px !important;
+}
+.el-dialog__header {
+  padding: 15px 24px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09) !important;
+}
+.el-dialog__title {
+  font-size: 16px !important;
+  color:rgba(0,0,0,0.85) !important;
+}
+.el-dialog__body{
+  margin: 15px !important;
+  padding: 0 !important;
+  border: 1px solid #f2f4f8 !important;
+}
+.el-dialog__footer{
+  padding: 10px 15px !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.09) !important;
+}
+
+.el-drawer__body {
+  padding: 0 !important;
+}
+
+.el-drawer__body .el-select .el-input__inner{
+  height: 28px !important;
+  line-height: 28px !important;
+}
+
+//.el-dialog__headerbtn {
+  //top: 10px;
+  //right: 10px;
+//}
+// el-tree 树 样式修改
+.el-tree-node__content{
+  height: 30px !important;
+  font-size: 14px !important;
+}
+// el 滚动条
+.el-scrollbar__wrap {
+  overflow-x: hidden !important;
+}
+
+.el-tooltip__popper {
+  max-width: calc(100% * 0.9);
+}

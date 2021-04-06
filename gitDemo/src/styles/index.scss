@@ -1,0 +1,200 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  min-width: 1280px;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+.title-color {
+  color: #000 !important;
+  background-color: #f2f4f8 !important; // #f2f4f8  F2F2F2
+  border: 1px solid #D4D4D4 !important;
+  font-size: 14px !important;
+  padding: 0px 5px !important;
+  height: 35px !important;
+  line-height: 35px!important;
+  width: 100% !important;
+  background: #fff;
+}
+.fex-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select-line {
+  .el-input__inner {
+    height: 28px !important;
+  }
+}
+
+.beauty-Scroll{
+  width: 100%;
+  height: 100%;
+  .el-scrollbar{
+    width: 100%;
+    height: 100%;
+  }
+  .el-scrollbar__wrap {
+    overflow-x: hidden !important;
+    .el-scrollbar__view {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+// toolbar 样式
+.border{
+  border: 1px solid #ebeef5;
+}
+.toolbar{
+  height: 38px;
+  width: 100%;
+  padding: 5px;
+  line-height: 28px;
+  vertical-align: middle;
+  font-size: 14px;
+  .el-button{
+    padding: 5px !important;
+  }
+  .el-button+.el-button{
+    padding: 5px !important;
+    // margin: 0 !important;
+  }
+  .searchText{
+    float: right;
+    width: 180px;
+  }
+  .rightItem{
+    float: right;
+  }
+}
+
+// paneltitle
+.paneltitle{
+  height: 35px;
+  width: 100%;
+  padding: 5px;
+  background-color: #f2f4f8;
+}
+// 设置对话框 高度为 90% 上下居中
+.abow_dialog {
+  display: flex;
+  justify-content: center;
+  align-items: Center;
+  overflow: hidden;
+  .el-dialog {
+    margin: 0 auto !important;
+    height: 90%;
+    overflow: hidden;
+    .el-dialog__body {
+      position: absolute;
+      left: 0;
+      top: 54px;
+      bottom: 0;
+      right: 0;
+      padding: 0;
+      z-index: 1;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+.navbar-svg-icon {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.tree-table-style {
+  .el-table--border .el-table__row td:first-child {
+    .cell {
+      padding-left: 20px !important;
+    }
+
+    .el-table__placeholder {
+      width: 0 !important;
+    }
+
+    .el-table__expand-icon {
+      width: 13px;
+      margin-left: -15px;
+    }
+  }
+}
+
+.tree-table-style2 {
+  .el-table--border .el-table__row td:nth-child(2) {
+    .cell {
+      padding-left: 10px !important;
+    }
+
+    .el-table__placeholder {
+      width: 0 !important;
+    }
+
+    .el-table__expand-icon {
+      width: 13px;
+      margin-left: -15px;
+    }
+  }
+}
